@@ -1,0 +1,19 @@
+<div id="about" class="about-container" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+  <!-- Image Section -->
+  <div class="image-section" fxFlex="50" fxFlex.lt-md="100" fxLayoutAlign="end center">
+    <img src="assets/aaru.jpg" alt="Donald McKinney" class="profile-image" />
+  </div>
+
+  <!-- Details Section -->
+  <div class="details-section" fxFlex="50" fxFlex.lt-md="100">
+    <h1>About Me</h1>
+    <p><strong>Name :</strong> {{ profile.name }}</p>
+    <p><strong>Position :</strong> {{ profile.position }}</p>
+    <p><strong>Date of Birth :</strong> {{ profile.dob }}</p>
+    <p><strong>Phone :</strong> {{ profile.phone }}</p>
+    <p><strong>Email :</strong> {{ profile.email }}</p>
+    <p style="margin-bottom: 30px;"><strong>Address :</strong> {{ profile.address }}</p>
+    
+    <button mat-flat-button (click)="downloadCV()" class="btn-CV">Download CV</button>
+  </div>
+</div>

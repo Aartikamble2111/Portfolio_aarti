@@ -1,0 +1,22 @@
+<div  id="skills"  class="skills-container">
+    <p class="main-heading">My Skills</p>
+    <p class="description">
+        Far away, beyond the mountains, lies a world of possibilities
+    </p>
+    <div class="skills-grid" >
+      <div *ngFor="let skill of skills" class="skill">
+        <div class="skill-header">
+          <span>{{ skill.name }}</span>
+          <span>{{ skill.percentage }}%</span>
+        </div>
+        <div class="progress-bar">
+          <div
+            class="progress"
+            [style.width.%]="skill.percentage"
+            [style.background]="skill.color"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

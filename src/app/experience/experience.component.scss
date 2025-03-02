@@ -1,0 +1,107 @@
+/* General Container Styling */
+.experience-container {
+    padding: 20px;
+    text-align: center;
+    // background-color: #f9f9f9;
+    border-radius: 8px;
+    // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  
+  .experience-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #f2fff2;
+  }
+  
+  /* Experience List Layout */
+  .experience-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Individual Experience Item */
+  .experience-item {
+    flex: 1 1 calc(33% - 20px); /* 3 items per row */
+    max-width: calc(33% - 20px);
+    min-width: 280px;
+    // background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for items */
+  .experience-item:hover {
+    transform: translateY(-5px);
+    // box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Experience Header Styling */
+  .experience-header {
+    // border-bottom: 2px solid #f0f0f0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .experience-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #f2fff2;
+  }
+  
+  .experience-date {
+    font-size: 0.9rem;
+    color: #f2fff2;
+    margin-top: 5px;
+  }
+  
+  /* Experience Body Styling */
+  .experience-body {
+    padding-top: 10px;
+    color: #333;
+  }
+  
+  .company {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f2fff2;
+  }
+  
+  .responsibilities {
+    list-style: none;
+    padding-left: 20px;
+    color: #f2fff2;
+  }
+  
+  .responsibilities li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .experience-item {
+      flex: 1 1 calc(50% - 20px); /* 2 items per row */
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .experience-item {
+      flex: 1 1 100%; /* 1 item per row */
+      max-width: 100%;
+    }
+  }
+  .main-heading {
+    color: #f1f1f1;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 60px;
+    }

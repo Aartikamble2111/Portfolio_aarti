@@ -1,0 +1,14 @@
+<div class="education-container" id="education">
+    <p class="main-heading">Education</p>
+    <div *ngFor="let education of educationDetails" class="education-item">
+      <div class="education-header" (click)="toggleDetails(education)">
+        <p class="edu-heading">{{ education.degree }}</p>
+        <p class="edu-heading">{{ education.year }}</p>
+      </div>
+      <div *ngIf="education.expanded" class="education-details">
+        <p class="edu-heading"><strong>Institution :</strong> {{ education.university }}</p>
+        <p class="edu-heading"><strong>Year :</strong> {{ education.year }}</p>
+      </div>
+    </div>
+  </div>
+  

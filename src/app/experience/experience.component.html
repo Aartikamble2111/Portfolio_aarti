@@ -1,0 +1,20 @@
+<div class="experience-container" id="experience">
+    <p class="main-heading">Experience</p>
+    <div class="experience-list">
+      <div *ngFor="let experience of experiences" class="experience-item">
+        <div class="experience-header">
+          <h3 class="experience-title">{{ experience.title }}</h3>
+          <p class="experience-date">{{ experience.date }}</p>
+        </div>
+        <div class="experience-body">
+          <p class="company">{{ experience.company }}</p>
+          <ul class="responsibilities">
+            <li *ngFor="let responsibility of experience.responsibilities">
+              {{ responsibility }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  

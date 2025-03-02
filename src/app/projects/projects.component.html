@@ -1,0 +1,18 @@
+<div  id="projects" class="container" >
+    <p class="main-heading">Projects</p>
+    <div class="projects-container">
+      <div *ngFor="let project of projects" class="project-item">
+        <div class="project-header">
+          <h3>{{ project.title }}</h3>
+        </div>
+        <div class="project-body">
+          <p>{{ project.description }}</p>
+          <ul>
+            <li *ngFor="let detail of project.details">{{ detail }}</li>
+          </ul>
+          <p>Technologies used : {{ project.technologies }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

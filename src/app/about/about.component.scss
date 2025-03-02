@@ -1,0 +1,65 @@
+#about {
+  margin-top: 40px !important;
+}
+.about-container {
+  display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+
+}
+
+/* Image Section */
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Details Section */
+.details-section {
+  text-align: left;
+  padding: 20px;
+  color: #f2fff2;
+ 
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile-image {
+    max-width: 180px; /* Reduce image size */
+  }
+
+  .details-section {
+    text-align: center;
+  }
+
+  .btn-CV {
+    width: 100%;
+    // margin-top: 15px !important;
+  }
+}
+#about {
+  padding-top: 70px; /* Adjust this based on your header height */
+}
+
