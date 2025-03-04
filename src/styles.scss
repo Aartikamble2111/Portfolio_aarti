@@ -1,34 +1,54 @@
-
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
-
-
 
 body, html {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
-    // background-color: #fff; /* Black background */
-    color: #0e0000; /* White text for contrast */
-    font-family: 'Arial', sans-serif; /* Clean font for readability */
-    height: 100%; /* Ensure it covers the full height */
-    box-sizing: border-box; /* Include padding and border in width/height */
-    background-image: -webkit-linear-gradient(0deg,#38383c 0%, #d6d0d0 100%);
+    color: #0e0000; /* Text color */
+    font-family: 'Lato', sans-serif;
+    height: 100%; /* Full height */
+    box-sizing: border-box; /* Ensure padding & border are included */
+    background-image: -webkit-linear-gradient(0deg, #38383c 0%, #d6d0d0 100%);
+    scroll-behavior: smooth;
+    opacity: 0; /* Initially hide page */
+    animation: fadeInUp 1s ease-in-out forwards; /* Apply fade-in animation */
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Staggered animations for sections */
+.container, .about-container, .contact-container, .intro-section {
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.about-container {
+    animation-delay: 0.3s;
+}
+
+.contact-container {
+    animation-delay: 0.5s;
+}
+
 .spacer {
     flex: 1 1 auto;
-  }
-  a {
+}
+
+a {
     color: white;
     text-decoration: none;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+}
 
-html {
-  scroll-behavior: smooth;
+html, body {
+    height: 100%;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
 }

@@ -27,10 +27,10 @@ export class AboutComponent {
   }
 
   downloadCV() {
-    const fileUrl = 'assets/files/Aarti_CV.pdf'; // Path to the CV file
+    const fileUrl = 'assets/files/Aartikamble_CV.pdf'; // Path to the CV file
     const anchor = document.createElement('a');
     anchor.href = fileUrl;
-    anchor.download = 'Aarti_CV.pdf'; // The name for the downloaded file
+    anchor.download = 'Aartikamble_CV.pdf'; // The name for the downloaded file
     anchor.click();
   }
   scrollToSection(about: string) {

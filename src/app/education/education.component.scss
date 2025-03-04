@@ -31,7 +31,7 @@
   /* Education Header */
   .education-header {
     cursor: pointer;
-    display: flex;
+    // display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #f1f1f1;
@@ -93,4 +93,5 @@
     font-size: 20px;
     color: #f2fff2;
     font-weight: 500; 
+    text-align: center !important;
    }

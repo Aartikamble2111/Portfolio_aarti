@@ -1,4 +1,9 @@
 /* Ensure the container takes full height */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  // padding-top: 80px; /* Adjust this based on the navbar height */
+}
 .container {
   width: 100%;
   min-height: 100vh;
@@ -28,9 +33,10 @@
 }
 
 .description {
-  font-size: 1.2rem;
+  font-size: 17px;
   line-height: 1.6;
   color: #f2fff2;
+  font-family: Arial, sans-serif !important;
 }
 
 /* Responsive Design */
