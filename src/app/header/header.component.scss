@@ -1,8 +1,8 @@
 /* General Styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  padding-top: 80px; /* Adjust this based on the navbar height */
+  padding-top: 60px; /* Adjust to match navbar height */
+  overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
 }
 
 /* Navbar Styles */
@@ -10,22 +10,24 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px; /* Increased padding to give more height to the navbar */
-  background-color: #15172138;
-  color: #121d41;
-  position: fixed; /* Fix the navbar at the top */
+  padding: 15px 20px;
+  background-color: #333333;
+  color: white;
+  position: fixed !important; /* Ensures navbar stays fixed */
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: 1000; /* Ensures navbar is on top */
-  box-sizing: border-box; /* Ensures padding doesn't affect the element's width */
+  width: 100%; /* Changed from 100vw to 100% to prevent scrolling issues */
+  height: 60px; /* Fixed height for consistency */
+  z-index: 9999; /* High z-index to stay on top */
+  box-sizing: border-box;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds shadow for visibility */
 }
 
 /* Navbar Name */
 .navbar-name {
   font-size: 24px;
   font-weight: bold;
-  color: #f2fff2;
+  color: #E0E0E0;
 }
 
 /* Navbar Menu Styles */
@@ -36,7 +38,7 @@ body {
 
 .navbar-menu a {
   text-decoration: none;
-  color: #f2fff2;
+  color: #F8F8F2;
   font-size: 16px;
   transition: color 0.3s;
   font-weight: 700;

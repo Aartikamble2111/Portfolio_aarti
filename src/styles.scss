@@ -3,14 +3,12 @@
 body, html {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
-    color: #0e0000; /* Text color */
+    color: #E0E0E0; /* Text color */
     font-family: 'Lato', sans-serif;
     height: 100%; /* Full height */
     box-sizing: border-box; /* Ensure padding & border are included */
-    background-image: -webkit-linear-gradient(0deg, #38383c 0%, #d6d0d0 100%);
+    background-color: #333333;
     scroll-behavior: smooth;
-    opacity: 0; /* Initially hide page */
-    animation: fadeInUp 1s ease-in-out forwards; /* Apply fade-in animation */
 }
 
 /* Smooth fade-in animation */
@@ -25,7 +23,7 @@ body, html {
   }
 }
 
-/* Staggered animations for sections */
+/* Apply fade-in animation to specific sections */
 .container, .about-container, .contact-container, .intro-section {
     opacity: 0;
     animation: fadeInUp 1s ease-in-out forwards;
@@ -39,6 +37,7 @@ body, html {
     animation-delay: 0.5s;
 }
 
+/* Other utility styles */
 .spacer {
     flex: 1 1 auto;
 }

@@ -27,12 +27,12 @@ import { Title } from '@angular/platform-browser';
 })
 export class SkillsComponent {
   skills = [
-    { name: 'HTML', percentage: 90, color: '#3b5998' },
-    { name: 'CSS', percentage: 85, color: '#0769ad' },
-    { name: 'JAVASCRIPT', percentage: 95, color: '#f16529' },
-    { name: 'ANGULAR', percentage: 90, color: '#2965f1' },
-    { name: 'TYPESCRIPT', percentage: 70, color: '#21759b' },
-    { name: 'ANGULAR MATERAIL', percentage: 80, color: '#5e9e2f' },
+    { name: 'HTML', percentage: 90, color: 'rgb(181, 183, 188)' },
+    { name: 'CSS', percentage: 85, color: 'rgb(181, 183, 188)' },
+    { name: 'JAVASCRIPT', percentage: 95, color: 'rgb(181, 183, 188)' },
+    { name: 'ANGULAR', percentage: 90, color: 'rgb(181, 183, 188)' },
+    { name: 'TYPESCRIPT', percentage: 70, color: 'rgb(181, 183, 188)' },
+    { name: 'ANGULAR MATERIAL', percentage: 80, color: 'rgb(181, 183, 188)' },
   ];
     constructor (private titleservice:Title) {
         this.titleservice.setTitle('Aarti kamble - Skills ')
