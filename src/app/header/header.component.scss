@@ -38,7 +38,7 @@ body {
 
 .navbar-menu a {
   text-decoration: none;
-  color: #F8F8F2;
+  color: #fff5f5;
   font-size: 16px;
   transition: color 0.3s;
   font-weight: 700;
@@ -46,9 +46,10 @@ body {
 }
 
 .navbar-menu a:hover {
-  color: #484646;
+  color: #ffffff;
   text-decoration: underline;
   text-underline-offset: 5px;
+  font-size: 18px;
 }
 
 /* Hamburger Menu Button */
