@@ -8,7 +8,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class ContactComponent {
   contactDetails = [
-    { emoji: '📍', label: 'Address', value: 'Abu Shagara, Sharjah UAE' },
+    { emoji: '📍', label: 'Address', value: 'Dubai Investment Park-1, Dubai, UAE' },
     { emoji: '📞', label: 'Contact Number', value: '971561787404' },
     { emoji: '📧', label: 'Email Address', value: 'kambleaarti2111@gmail.com' },
     // { emoji: '🌐', label: 'Website', value: 'yoursite.com' },
